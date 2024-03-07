@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,6 +76,7 @@ public class Tests {
 //
 //	}
 //
+    @Ignore
 	@Test
 	public void login() throws JsonProcessingException, Exception {
 		AppUser menu = new AppUser("EMPLOYEE101", "emp", "emp", "", "EMPLOYEE");

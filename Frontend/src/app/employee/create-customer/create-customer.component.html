@@ -14,7 +14,7 @@
                     <thead>
                         <td colspan="3" style="text-align: center;">
                             <br>
-                            <h2>Customer Registration !!</h2>
+                            <h2>Đăng ký khách hàng !!</h2>
                             <hr width="80%" size="15" color="black">
                             <br>
                         </td>
@@ -27,19 +27,19 @@
                         
                     </tr>
                     <tr>
-                    <th>Customer ID : </th>
+                    <th>ID Khách hàng : </th>
                     <td>
                     </td>
                     <td style="text-align: right;">
-                        <input type="text" name="Id" placeholder="Enter Id" autocomplete="off" required="required" ngModel #Id="ngModel" 
+                        <input type="text" name="Id" placeholder="Nhập Id" autocomplete="off" required="required" ngModel #Id="ngModel"
                         class="form-control">
                     </td>
                 </tr>
                 <tr>
-                    <th>Username : </th>
+                    <th>Tên : </th>
                     <td></td>
                     <td>
-                        <input type="text" name="username" placeholder="Username" autocomplete="off" required="required"  ngModel #username="ngModel"
+                        <input type="text" name="username" placeholder="Nhập tên" autocomplete="off" required="required"  ngModel #username="ngModel"
                         class="form-control" />
                     </td>
                 </tr>
@@ -47,12 +47,12 @@
                     <th>Password : </th>
                     <td></td>
                     <td>
-                        <input type="password" path="password" name="password" placeholder="Password" ngModel #password="ngModel"
+                        <input type="password" path="password" name="password" placeholder="Nhập mật khẩu" ngModel #password="ngModel"
                         required="required" class="form-control" />
                     </td>
                 </tr>
                 <tr>
-                    <th>Date Of Birth : </th>
+                    <th>Ngày sinh : </th>
                     <td></td>
                     <td>
                         <input type="date" id="date" path="dateOfBirth" name="dob" placeholder="Date of Birth" ngModel #dob="ngModel"
@@ -68,15 +68,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Current Address : </th>
+                    <th>Địa chỉ : </th>
                     <td></td>
                     <td>
-                        <input type="text" path="address" name="address" placeholder="address" autocomplete="off" ngModel #address="ngModel"
+                        <input type="text" path="address" name="address" placeholder="Địa chỉ" autocomplete="off" ngModel #address="ngModel"
                         required="required" class="form-control" />
                     </td>
                 </tr>
                 <tr style="text-align: center;">
-                    <th colspan="4"><button type="submit" name="signup_submit" class="btn btn-success" (click)="onSubmit(create)">Create</button></th>
+                    <th colspan="4"><button type="submit" name="signup_submit" class="btn btn-success" (click)="onSubmit(create)">Tạo</button></th>
                 </tr>
             </table>
         </form>

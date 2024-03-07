@@ -43,7 +43,6 @@ public class CustomerEntity {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date dateOfBirth;
 
-	@Pattern(regexp = "^[A-Z]{5}+[0-9]{4}+[A-Z]{1}$")
 	@Column(name = "pan", length = 10)
 	@NotBlank
 	private String pan;

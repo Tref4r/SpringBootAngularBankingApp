@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Backend/Authentication-MS/Authentication-MS.iml" filepath="$PROJECT_DIR$/Backend/Authentication-MS/Authentication-MS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Banking-System.iml" filepath="$PROJECT_DIR$/.idea/Banking-System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backend/Customer-MS/CustomerService.iml" filepath="$PROJECT_DIR$/Backend/Customer-MS/CustomerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backend/Account-MS/accountservice.iml" filepath="$PROJECT_DIR$/Backend/Account-MS/accountservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backend/Rules-MS/rulesservice.iml" filepath="$PROJECT_DIR$/Backend/Rules-MS/rulesservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backend/Transaction-MS/transactionservice.iml" filepath="$PROJECT_DIR$/Backend/Transaction-MS/transactionservice.iml" />
+    </modules>
+  </component>
+</project>

@@ -36,8 +36,8 @@ public class RulesServiceImpl implements RulesService {
 
 	@Override
 	public double serviceCharges(Account account) {
-		double detected = account.getCurrentBalance() / 10;
-		if (account.getCurrentBalance() < 2000 && (account.getCurrentBalance() - detected) > 0) {
+		double detected = account.getCurrentBalance() / 5;//Phí dịch vụ 5%
+		if (account.getCurrentBalance() < 50000 && (account.getCurrentBalance() - detected) > 0) {
 			return detected;
 		} 
 		return 0.0;

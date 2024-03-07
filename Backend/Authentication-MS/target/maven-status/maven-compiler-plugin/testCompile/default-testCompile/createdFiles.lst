@@ -1,0 +1,6 @@
+com\cognizant\authenticationservice\Tests.class
+com\cognizant\authenticationservice\model\AppUserTest.class
+com\cognizant\authenticationservice\model\ErrorMessageTest.class
+com\cognizant\authenticationservice\model\AppUserNotFountTest.class
+com\cognizant\authenticationservice\AuthTests.class
+com\cognizant\authenticationservice\AuthenticationMsApplicationTests.class

@@ -1,18 +1,18 @@
 <app-header-work></app-header-work>
 <section>
     <br>
-    <h2 class="text-center">Customer Details</h2>
+    <h2 class="text-center">Chi tiết khách hàng</h2>
     <br>
     <div class="container" >
         <table class="table table-bordered" cellpadding="5">
             
             <tr>
-                <th>CUSTOMER ID</th>
-                <th>CUSTOMER NAME</th>
-                <th>DOB</th>
+                <th>ID Khách hàng</th>
+                <th>Tên Khách hàng </th>
+                <th>Ngày sinh</th>
                 <th>PAN</th>
-                <th>ADDRESS</th>
-                <th>ACCOUNTS</th>
+                <th>Địa chỉ</th>
+                <th>Tài khoản</th>
             </tr>
             <tr>
                 <td>{{custDetails.userid}}</td>
@@ -24,10 +24,10 @@
                     <table cellpadding="5">
                         
                         <tr>
-                            <th>ACCOUNT ID</th>
-                            <th>CURRENT BALANCE</th>
-                            <th>ACCOUNT TYPE</th>
-                            <th>OWNER NAME</th>
+                            <th>ID TÀI KHOẢN</th>
+                            <th>SỐ DƯ HIỆN TẠI</th>
+                            <th>LOẠI TÀI KHOẢN</th>
+                            <th>CHỦ SỞ HỮU</th>
                         </tr>
                         <tr *ngFor="let account of custDetails.accounts">
                             <td>{{account.accountId}}</td>

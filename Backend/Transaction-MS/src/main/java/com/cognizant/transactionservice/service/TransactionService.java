@@ -60,7 +60,7 @@ public class TransactionService implements TransactionServiceInterface {
 				sourcetransaction.setTargetAccountId(targetAccount.getAccountId());
 				sourcetransaction.setTargetOwnerName(targetAccount.getOwnerName());
 				sourcetransaction.setInitiationDate(LocalDateTime.now());
-				sourcetransaction.setReference("transfer");
+				sourcetransaction.setReference("Chuyển khoản");
 				transactionRepository.save(sourcetransaction);
 				return true;
 			}
@@ -99,7 +99,7 @@ public class TransactionService implements TransactionServiceInterface {
 			transaction.setTargetAccountId(sourceAccount.getAccountId());
 			transaction.setTargetOwnerName(sourceAccount.getOwnerName());
 			transaction.setInitiationDate(LocalDateTime.now());
-			transaction.setReference("withdrawl");
+			transaction.setReference("Rút tiền");
 			transaction.setAmount(accountInput1.getAmount());
 			transactionRepository.save(transaction);
 			return true;
@@ -121,7 +121,7 @@ public class TransactionService implements TransactionServiceInterface {
 			transaction.setTargetAccountId(sourceAccount.getAccountId());
 			transaction.setTargetOwnerName(sourceAccount.getOwnerName());
 			transaction.setInitiationDate(LocalDateTime.now());
-			transaction.setReference("service charge");
+			transaction.setReference("Phí dịch vụ");
 			transaction.setAmount(accountInput1.getAmount());
 			transactionRepository.save(transaction);
 			return true;
@@ -146,7 +146,7 @@ public class TransactionService implements TransactionServiceInterface {
 			transaction.setTargetAccountId(sourceAccount.getAccountId());
 			transaction.setTargetOwnerName(sourceAccount.getOwnerName());
 			transaction.setInitiationDate(LocalDateTime.now());
-			transaction.setReference("deposit");
+			transaction.setReference("Nạp tiền");
 			transaction.setAmount(accountInput1.getAmount());
 			transactionRepository.save(transaction);
 			return true;

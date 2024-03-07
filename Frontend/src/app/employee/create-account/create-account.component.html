@@ -11,45 +11,45 @@
       <form #f="ngForm">
         <table class="container">
           <thead>
-            <td colspan="3" style="text-align: center;">
-              <h2><i>Customer Account Creation!!</i></h2>
-            </td>
-            <td>
-            </td>
-            <td></td>
+          <td colspan="3" style="text-align: center;">
+            <h2><i>Mở tài khoản khách hàng!!</i></h2>
+          </td>
+          <td>
+          </td>
+          <td></td>
           </thead>
           <tr>
           </tr>
           <tr>
-            <th>Customer ID: </th>
+            <th>ID Khách hàng: </th>
 
             <td>
               <input type="text" name="customerId" autocomplete="off" required="required" [value]="id"
-                class="form-control" readonly>
+                     class="form-control" readonly>
             </td>
             <td>
             </td>
             <td></td>
           </tr>
           <tr>
-            <th>OPENING AMOUNT:</th>
+            <th>Số dư khởi điểm:</th>
 
             <td>
-              <input type="text" name="Amount" placeholder="Amount" autocomplete="off" required="required" ngModel
-                #Amount="ngModel" class="form-control" />
+              <input type="text" name="Amount" placeholder="Số dư" autocomplete="off" required="required" ngModel
+                     #Amount="ngModel" class="form-control" />
             </td>
             <td>
             </td>
             <td></td>
           </tr>
           <tr>
-            <th>ACCOUNT TYPE:</th>
+            <th>Loại tài khoản:</th>
 
             <td>
-              <select type="text" path="accountType" placeholder="Account Type" name="accountType"
-                [ngModel]="accountType" #accountType="ngModel" autocomplete="off">
-                <option>Savings</option>
-                <option>Current</option>
+              <select type="text" path="accountType" placeholder="Loại tài khoản" name="accountType"
+                      [ngModel]="accountType" #accountType="ngModel" autocomplete="off">
+                <option>Tiết kiệm</option>
+                <option>Chi tiêu</option>
               </select>
             </td>
             <td>
@@ -57,30 +57,30 @@
             <td></td>
           </tr>
           <tr>
-            <th>OPENING DATE:</th>
+            <th>Ngày mở tài khoản:</th>
 
             <td>
               <input type="date" id="date" path="dateOfBirth" name="dob" placeholder="Date of Birth" ngModel
-                #dob="ngModel" required="required" class="form-control" />
+                     #dob="ngModel" required="required" class="form-control" />
             </td>
             <td>
             </td>
             <td></td>
           </tr>
           <tr>
-            <th>OWNER NAME: </th>
+            <th>Chủ sở hữu: </th>
 
             <td>
-              <input type="text" path="owername" name="ownername" placeholder="Owner Name" autocomplete="off" ngModel
-                #owername="ngModel" maxlength="10" required="required" class="form-control" />
+              <input type="text" path="owername" name="ownername" placeholder="Tên chủ sở hữu" autocomplete="off" ngModel
+                     #owername="ngModel" maxlength="100000" required="required" class="form-control" />
             </td>
             <td>
             </td>
             <td></td>
           </tr>
           <tr style="text-align: center;">
-            <th><input type="submit" name="signup_submit" class="btn btn-success" value="Create"
-                (click)="createAccount(f)" style=" margin-left:180px;" /></th>
+            <th><input type="submit" name="signup_submit" class="btn btn-success" value="Tạo"
+                       (click)="createAccount(f)" style=" margin-left:180px;" /></th>
             <td>
             </td>
             <td></td>

@@ -28,11 +28,11 @@ export class LoginComponent implements OnInit {
     console.log(this.href);
     if(this.router.url=='/loginCustomer'){
       this.customer = true;
-      this.role="Customer Login";
+      this.role="Khách hàng Login";
       this.employee=false;
     }
     else{
-      this.role="Employee Login";
+      this.role="Admin Login";
       this.customer=false;
       this.employee=true;
     }

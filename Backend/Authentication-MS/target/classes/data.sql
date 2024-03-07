@@ -1,3 +1,11 @@
-insert into appuser (userid,username,password,role) values ('EMPLOYEE101','employee','employee','EMPLOYEE');
-insert into appuser (userid,username,password,role) values ('CUSTOMER101','customer','customer','CUSTOMER');
-insert into appuser (userid,username,password,role) values ('CUSTOMER102','customer','customer','CUSTOMER');
+INSERT INTO appuser (userid, username, password, role)
+SELECT 'EMPLOYEE101', 'employee', 'employee', 'EMPLOYEE'
+    WHERE NOT EXISTS (SELECT 1 FROM appuser WHERE userid = 'EMPLOYEE101');
+
+INSERT INTO appuser (userid, username, password, role)
+SELECT 'CUSTOMER101', 'customer', 'customer', 'CUSTOMER'
+    WHERE NOT EXISTS (SELECT 1 FROM appuser WHERE userid = 'CUSTOMER101');
+
+INSERT INTO appuser (userid, username, password, role)
+SELECT 'CUSTOMER102', 'customer', 'customer', 'CUSTOMER'
+    WHERE NOT EXISTS (SELECT 1 FROM appuser WHERE userid = 'CUSTOMER102');

@@ -1,6 +1,6 @@
 version: '3'
 services:
-  accountservice:
+  account-service:
     image: account-service
     ports:
       - 8086:8086
@@ -10,7 +10,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/retail_banking_sys
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: TungShieda@15
-  Authentication-MS:
+  auth-ms:
     image: auth-ms
     ports:
       - 8084:8084
@@ -20,7 +20,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/retail_banking_sys
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: TungShieda@15
-  CustomerService:
+  customer-ms:
     image: customer-ms
     ports:
       - 8085:8085
@@ -30,7 +30,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/retail_banking_sys
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: TungShieda@15
-  rulesservice:
+  rules-service:
     image: rules-service
     ports:
       - 8090:8090
@@ -40,7 +40,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/retail_banking_sys
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: TungShieda@15
-  transactionservice:
+  transaction-ms:
     image: transaction-ms
     ports:
       - 8087:8087

@@ -10,7 +10,8 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "TRANSACTION")
+//@Table(name = "TRANSACTION")
+@Table(name = "transaction")
 @Getter
 @Setter
 @AllArgsConstructor

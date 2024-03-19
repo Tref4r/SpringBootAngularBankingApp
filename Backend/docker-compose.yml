@@ -57,3 +57,7 @@ services:
       MYSQL_DATABASE: retail_banking_sys
     ports:
       - 3306:3306
+  frontend:
+    build: ../Frontend
+    ports:
+      - '80:80'

@@ -15,6 +15,8 @@ export class CustomerComponent implements OnInit {
   display=false;
   selectedValue:string;
   transactions;
+  aId: any;
+  accId: any;
 
   constructor(
     private customerservice:CustomerService,

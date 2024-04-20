@@ -8,7 +8,7 @@
 
 Đảm bảo bạn đã cài đặt Java và Node.js trên máy của bạn trước khi tiếp tục.
 
-1. Clone repo này bằng cách sử dụng lệnh sau: `git clone <url của repo>`
+1. Clone repo này bằng cách sử dụng lệnh sau: `git clone https://github.com/Tref4r/SpringBootAngularBankingApp/tree/main`
 2. Di chuyển vào thư mục dự án: `cd SpringBootAngular-Banking-App`
 3. Cài đặt các gói cần thiết cho phía máy chủ Spring Boot: `mvn install`
 4. Cài đặt các gói cần thiết cho phía máy khách Angular: `cd client && npm install`
